@@ -1,0 +1,81 @@
+<div class="row">
+  <div class="col-md-12">
+
+    <p id="notice"><%= notice %></p>
+
+    <!-- <h1>Items</h1> -->
+    <% @items.each do |item| %>
+      <div class="col-md-4">
+        <div class="item-wrapper">
+          <div class="item-header">
+            <div class="item-title text-center"><h3><%= item.title %></h3></div>
+            <div class="item-image img-responsive text-center"><%= image_tag item.image_url(:thumb) %></div>
+          </div>
+          <div class="item-details">
+            <p>Price: CAD <%= item.price %></p>
+            <p>Category: <%= item.category %></p>
+            <div class="item-description"><p>Description: <%= item.description %></p></div>
+            <!-- <p>Sold: <%= item.status %></p> -->
+            <div class="item-contact-info">
+              <p>Email: <a href="<%= item.email %>" target="_top"><%= item.email %></a></p>
+              <p>phone number: <a href="tel:<%= item.phone_number %>"><%= item.phone_number %></a></p>
+              <p>Location: <%= item.location %></p>
+            </div>
+          </div>
+
+          <!-- <p><%= item.user_id %></p> -->
+          <p><%= link_to 'More', item, class: "btn btn-primary" %></p>
+
+
+<!-- if the current user is the owner of the item let him/her see these links  -->
+            <% if current_user && item.user_id == current_user.id %>
+          <%= link_to 'Edit', edit_item_path(item), class: "btn btn-primary" %>
+          <%= link_to 'Destroy', item,class: "btn btn-primary", method: :delete, data: { confirm: 'Are you sure?' } %></p>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>Image</th>
+          <th>Email</th>
+          <th>Phone number</th>
+          <th>Location</th>
+          <th>User</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @items.each do |item| %>
+          <tr>
+            <td><%= item.title %></td>
+            <td><%= item.price %></td>
+            <td><%= item.category %></td>
+            <td><%= item.description %></td>
+            <td><%= item.status %></td>
+            <td><%= item.image %></td>
+            <td><%= item.email %></td>
+            <td><%= item.phone_number %></td>
+            <td><%= item.location %></td>
+            <td><%= item.user_id %></td>
+            <td><%= link_to 'Show', item %></td>
+            <td><%= link_to 'Edit', edit_item_path(item) %></td>
+            <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to 'New Item', new_item_path %>
+  </div>
+</div>

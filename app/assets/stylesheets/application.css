@@ -11,6 +11,78 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
- *= require_self
  *= require bootstrap
+ *= require_self
  */
+
+/* ************************** Color choices ******************* */
+ /* primary = #9C27B0
+   primary dark = #7B1FA2
+   accent = #F06292
+   dark accent = #EC407A */
+
+/* *********************** Global settings *********************/
+a:hover {
+  background-color: transparent;
+  text-decoration: none;
+  color: #EC407A;
+}
+a {
+  text-decoration: none;
+  color: #F06292;
+}
+
+/* --------------- Over write Bootstrap --------------------- */
+
+.btn-primary {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #F06292;
+  color: white;
+  border: none;
+}
+
+.btn {
+  /*width: 100%;*/
+  background-color: #EAEAEA;
+  /*opacity: 0.57;*/
+}
+
+
+/* --------------------- index page -----------------------------/
+/* item header */
+
+.item-wrapper {
+  border: 5px solid #7B1FA2;
+  padding: 10px 10px 10px 10px;
+  border-radius: 7px;
+}
+
+.item-header{
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #F06292;
+}
+
+.item-wrapper .btn {
+  width: 40%;
+}
+
+.item-header h3{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #9C27B0;
+  color: white;
+  opacity: 0.87;
+}
+.item-image{
+  width: 100%;
+  height: 200px;
+}
+
+.item-details {
+  padding-top: 15px;
+  opacity: 0.87;
+}
