@@ -1,54 +1,60 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-12">
 
-<p>
-  <strong>Title:</strong>
-  <%= @item.title %>
-</p>
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @item.price %>
-</p>
+    <p>
+      <strong>Title:</strong>
+      <%= @item.title %>
+    </p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @item.category %>
-</p>
+    <p>
+      <strong>Price:</strong>
+      <%= @item.price %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
+    <p>
+      <strong>Category:</strong>
+      <%= @item.category %>
+    </p>
 
-<p>
-  <strong>Status:</strong>
-  <%= @item.status %>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @item.description %>
+    </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @item.image %>
-</p>
+    <p>
+      <strong>Status:</strong>
+      <%= @item.status %>
+    </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @item.email %>
-</p>
+    <p>
+      <strong>Image:</strong>
+      <%= @item.image %>
+    </p>
 
-<p>
-  <strong>Phone number:</strong>
-  <%= @item.phone_number %>
-</p>
+    <p>
+      <strong>Email:</strong>
+      <%= @item.email %>
+    </p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @item.location %>
-</p>
+    <p>
+      <strong>Phone number:</strong>
+      <%= @item.phone_number %>
+    </p>
 
-<p>
-  <strong>User:</strong>
-  <%= @item.user_id %>
-</p>
+    <p>
+      <strong>Location:</strong>
+      <%= @item.location %>
+    </p>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+    <p>
+      <strong>User:</strong>
+      <%= @item.user_id %>
+    </p>
+
+    <%= link_to 'Edit', edit_item_path(@item) %> |
+    <%= link_to 'Back', items_path %>
+  </div>
+
+</div>
