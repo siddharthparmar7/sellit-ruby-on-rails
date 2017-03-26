@@ -34,12 +34,14 @@
           </ul>
         </li>
       </ul>
-      <!-- <form class="navbar-form navbar-left" role="search">
+      <%= form_tag search_items_path, class: 'navbar-form navbar-left',
+                                      role: 'search', :method => :get do %>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <%= text_field_tag :query, params[:query], class: 'form-control', placeholder: 'Search' %>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form> -->
+          <%= submit_tag "Search!", class: 'btn btn-default' %>
+
+      <% end %>
       <ul class="nav navbar-nav navbar-right">
         <li> <%= link_to "Register", new_user_registration_url %> </li>
         <% if current_user %>

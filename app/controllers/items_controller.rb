@@ -6,6 +6,8 @@ class ItemsController < ApplicationController
   # GET /items.json
   def index
     @items = Item.all.page(params[:page]).per(9)
+    @item = Item.new
+    @filtered_data = Array.new
   end
 
   # GET /items/1
@@ -66,6 +68,38 @@ class ItemsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # post /items/filter
+  def filter
+    @item_categories = ['Books', 'Movie']
+    @filter_key = 'Books'
+    @filtered_data = Array.new
+    respond_to do |format|
+        Item.all.each do |item|
+          if('Books' == item.category)
+            @filtered_data << item
+            format.html { redirect_to items_url, notice: 'filtered data'}
+            # format.json {render json: @items}
+            format.js
+          else
+            format.html
+            format.js
+          end
+        end
+    end
+  end
+
+
+  def search
+  @items = Item.search do
+    keywords params[:query]
+  end.results
+
+  respond_to do |format|
+    format.html { render action: 'index' }
+    format.json { render json: @items }
+  end
+end
 
   private
     # Use callbacks to share common setup or constraints between actions.
