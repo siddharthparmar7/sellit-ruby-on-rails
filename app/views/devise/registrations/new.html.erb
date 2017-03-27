@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 text-center">
+
+    <%- if devise_mapping.omniauthable? %>
+      <%- resource_class.omniauth_providers.each do |provider| %>
+      <div class="facebook-log-in">
+        <%= link_to "Continue in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %><br />
+      </div>
+        <% end -%>
+    <% end -%>
+
+    <h4>or</h4>
+
+    <h3>Sign up</h3>
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= f.error_notification %>
+
+      <div class="form-inputs text-left">
+        <%= f.input :email, required: true, autofocus: true %>
+        <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+        <%= f.input :password_confirmation, required: true %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.button :submit, "Sign up" %>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

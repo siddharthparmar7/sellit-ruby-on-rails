@@ -36,19 +36,24 @@ a {
 /* --------------- Over write Bootstrap --------------------- */
 
 .btn-primary {
-  background-color: transparent;
+  background-color: #4DD0E1;
   border: none;
 }
 
 .btn-primary:hover {
   background-color: #4DD0E1;
   color: white;
+  opacity: 0.57;
   border: none;
 }
 
+.btn-default:hover {
+  background-color: #4DD0E1;
+  opacity: 0.57;
+}
+
 .btn {
-  /*width: 100%;*/
-  background-color: #EAEAEA;
+  background-color: #4DD0E1;
   /*opacity: 0.57;*/
 }
 
@@ -92,4 +97,17 @@ a {
 
 .btn-wrapper {
   margin-top: 20px;
+}
+
+/************************** Sign In ***********************/
+.facebook-log-in {
+  margin-left: 25%;
+  background-color: #3b5998;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+}
+
+.facebook-log-in a {
+  color: white;
 }

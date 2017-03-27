@@ -1,12 +1,11 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show, :search, :filter]
 
   # GET /items
   # GET /items.json
   def index
     @items = Item.all.page(params[:page]).per(9)
-    @item = Item.new
     @filtered_data = Array.new
   end
 
@@ -71,35 +70,30 @@ class ItemsController < ApplicationController
 
   # post /items/filter
   def filter
-    @item_categories = ['Books', 'Movie']
-    @filter_key = 'Books'
-    @filtered_data = Array.new
+    @items = Item.search do
+      keywords params[:filter_keys] || []
+      # keywords 'books'
+      # byebug
+    end.results
+
     respond_to do |format|
-        Item.all.each do |item|
-          if('Books' == item.category)
-            @filtered_data << item
-            format.html { redirect_to items_url, notice: 'filtered data'}
-            # format.json {render json: @items}
-            format.js
-          else
-            format.html
-            format.js
-          end
-        end
+      format.html { render action: 'index' }
+      format.json { render json: @items }
     end
   end
 
-
   def search
-  @items = Item.search do
-    keywords params[:query]
-  end.results
+    @items = Item.search do
+      keywords params[:query]
+      # keywords 'books'
+      fulltext params[:query]
+    end.results
 
-  respond_to do |format|
-    format.html { render action: 'index' }
-    format.json { render json: @items }
+    respond_to do |format|
+      format.html { render action: 'index' }
+      format.json { render json: @items }
+    end
   end
-end
 
   private
     # Use callbacks to share common setup or constraints between actions.

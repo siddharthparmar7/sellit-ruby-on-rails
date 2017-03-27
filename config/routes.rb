@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     collection do
       get :search
       # put :action
-      post :filter
+      get :filter
       # delete :action
     end
   end

@@ -2,25 +2,17 @@
   <div class="col-md-12">
 
     <div class="filer">
-      <!-- <%= form_tag({controller: 'items', action: 'filter'},
-      method: :post, class: 'form-inline') do |f| %>
-      <div class="checkbox">
-        <%= check_box_tag(:books, 'books') %><%= label_tag(:books, "Books") %>
-      </div>
-      <div class="checkbox">
-        <%= check_box_tag(:movie, 'movie') %><%= label_tag(:movie, "Movie") %>
-      </div>
-      <%= submit_tag("Search", class: 'btn btn-default') %>
+      <%= form_tag filter_items_path,
+                   method: 'get', role: 'search' do%>
+                   <div class="form-check form-check-inline">
+           <%= check_box_tag "filter_keys[]", 'books' %>
+           <%= label_tag(:books, "Books", class: 'form-check-label') %>
+           <%= check_box_tag "filter_keys[]", 'movies' %>
+           <%= label_tag(:movies, "Movies", class: 'form-check-label') %>
+           <%= submit_tag("Search", class: 'btn btn-default') %>
+
+       </div>
       <% end %>
-      <form class="form-inline">
-        <div class="checkbox">
-          <label><input type="checkbox" value="Books">Books</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="Movie">Movie</label>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form> -->
     </div>
   </div>
 </div>
