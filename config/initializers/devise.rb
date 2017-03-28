@@ -16,7 +16,7 @@ Devise.setup do |config|
 
 
   # OmniAuth for FaceBook
-  config.omniauth :facebook, '208506126300033', '281492b0c0b3f08762022ab5106d1035',scope: 'public_profile,email', info_fields: 'email,name'
+  config.omniauth :facebook, '208506126300033', '281492b0c0b3f08762022ab5106d1035',scope: 'public_profile,email', info_fields: 'email,name', callback: 'http://localhost:3000/users/auth/facebook/callback'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'

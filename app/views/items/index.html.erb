@@ -1,7 +1,11 @@
 <div class="row">
   <div class="col-md-12">
 
-    <div class="filer">
+    <div class="filter-icon btn text-right" id="filter-icon">
+      <%= image_tag('web-images/ic_tune_black_24dp_1x.png') %>
+    </div>
+
+    <div class="filter">
       <%= form_tag filter_items_path,
                    method: 'get', role: 'search' do%>
                    <div class="form-check form-check-inline">

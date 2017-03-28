@@ -12,6 +12,24 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+// = require turbolinks
 //= require bootstrap
+//= require_tree .
+//= require_self
+//= require customJS
+
+
+$(document).on('turbolinks:load', function() {
+  var counter = 0;
+  $('#filter-icon').click(function(){
+    // $('.filter').css('display', 'block');
+    if(counter == 0){
+      $('.filter').slideDown('100');
+      counter = 1;
+    }
+    else{
+      $('.filter').slideUp('100');
+      counter = 0;
+    }
+  });
+});

@@ -37,7 +37,7 @@ gem 'jbuilder', '~> 2.5'
 
 #Gemfile
 gem 'devise'
-gem 'omniauth-facebook'
+gem 'omniauth-facebook', '4.0.0'
 gem 'simple_form'
 
 # for image upload

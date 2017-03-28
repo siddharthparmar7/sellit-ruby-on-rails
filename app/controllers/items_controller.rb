@@ -63,7 +63,7 @@ class ItemsController < ApplicationController
     authorize @item
     @item.destroy
     respond_to do |format|
-      format.html { redirect_to items_url, notice: 'Item was successfully destroyed.' }
+      format.html { redirect_to items_url, notice: 'Item was successfully destroyed.'}
       format.json { head :no_content }
     end
   end
@@ -71,7 +71,10 @@ class ItemsController < ApplicationController
   # post /items/filter
   def filter
     @items = Item.search do
-      keywords params[:filter_keys] || []
+      params[:filter_keys].each do |key|
+        keywords key
+      end
+      # keywords params[:filter_keys] || []
       # keywords 'books'
       # byebug
     end.results
