@@ -113,13 +113,24 @@ a {
 
 /************************** Sign In ***********************/
 .facebook-log-in {
+  /*margin-left: 25%;
+  background-color: #3b5998;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;*/
+}
+
+.facebook-log-in{
+  margin-left: 10%;
+}
+.facebook-log-in a{
+  text-align: center;
+  padding: 30px;
+  border-radius: 2px;
   margin-left: 25%;
   background-color: #3b5998;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 50%;
-}
-
-.facebook-log-in a {
   color: white;
 }
