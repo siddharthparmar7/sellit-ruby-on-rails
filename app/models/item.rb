@@ -4,7 +4,7 @@ class Item < ApplicationRecord
 
   # for search
   searchable do
-    text :category, :title, :location    
-    # text :category
+    text :category, :title, :location
+    # text :category    
   end
 end
