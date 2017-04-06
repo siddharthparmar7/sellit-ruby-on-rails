@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+  skip_before_filter :verify_authenticity_token, if: :json_request?
   before_action :set_item, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show, :search, :filter]
 
@@ -60,6 +61,7 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.json
   def destroy
+    byebug
     authorize @item
     @item.destroy
     respond_to do |format|
@@ -107,5 +109,10 @@ class ItemsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
       params.require(:item).permit(:title, :price, :category, :description, :status, :image, :email, :phone_number, :location, :user_id)
+    end
+
+    def json_request?
+      # byebug
+      request.format.json?
     end
 end

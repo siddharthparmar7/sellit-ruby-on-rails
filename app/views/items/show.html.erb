@@ -3,58 +3,59 @@
 
     <p id="notice"><%= notice %></p>
 
-    <p>
-      <strong>Title:</strong>
-      <%= @item.title %>
-    </p>
+    <div class="single-item-wrapper">
+      <p>
+        <strong>Title:</strong>
+        <%= @item.title %>
+      </p>
 
-    <p>
-      <strong>Price:</strong>
-      <%= @item.price %>
-    </p>
+      <p>
+        <strong>Price:</strong>
+        <%= @item.price %>
+      </p>
 
-    <p>
-      <strong>Category:</strong>
-      <%= @item.category %>
-    </p>
+      <p>
+        <strong>Category:</strong>
+        <%= @item.category %>
+      </p>
 
-    <p>
-      <strong>Description:</strong>
-      <%= @item.description %>
-    </p>
+      <p>
+        <strong>Description:</strong>
+        <%= @item.description %>
+      </p>
 
-    <p>
-      <strong>Status:</strong>
-      <%= @item.status %>
-    </p>
+      <p>
+        <strong>Status:</strong>
+        <%= @item.status %>
+      </p>
 
-    <p>
-      <strong>Image:</strong>
-      <%= @item.image %>
-    </p>
+      <p>
+        <strong>Image:</strong>
+        <div class="item-image img-responsive text-center"><%= image_tag @item.image_url() %></div>
+      </p>
 
-    <p>
-      <strong>Email:</strong>
-      <%= @item.email %>
-    </p>
+      <p>
+        <strong>Email:</strong>
+        <%= @item.email %>
+      </p>
 
-    <p>
-      <strong>Phone number:</strong>
-      <%= @item.phone_number %>
-    </p>
+      <p>
+        <strong>Phone number:</strong>
+        <%= @item.phone_number %>
+      </p>
 
-    <p>
-      <strong>Location:</strong>
-      <%= @item.location %>
-    </p>
+      <p>
+        <strong>Location:</strong>
+        <%= @item.location %>
+      </p>
 
-    <p>
-      <strong>User:</strong>
-      <%= @item.user_id %>
-    </p>
+      <p>
+        <strong>User:</strong>
+        <%= @item.user_id %>
+      </p>
 
-    <%= link_to 'Edit', edit_item_path(@item) %> |
-    <%= link_to 'Back', items_path %>
+      <%= link_to 'Edit', edit_item_path(@item) %> |
+      <%= link_to 'Back', items_path %>
+    </div>
   </div>
-
 </div>

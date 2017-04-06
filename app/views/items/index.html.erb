@@ -22,13 +22,11 @@
 </div>
 
 
-
+<%= link_to 'New Item', new_item_path, class: 'btn btn-primary' %>
+<%= paginate @items %>
 <div class="row">
-  <%= paginate @items %>
   <div class="col-md-12">
-
     <p id="notice"><%= notice %></p>
-
     <!-- <h1>Items</h1> -->
     <% @items.each do |item| %>
       <div class="col-md-4">
@@ -71,7 +69,7 @@
       </div>
     <% end %>
 
-    <table>
+    <!-- <table>
       <thead>
         <tr>
           <th>Title</th>
@@ -107,11 +105,11 @@
           </tr>
         <% end %>
       </tbody>
-    </table>
+    </table> -->
 
     <br>
 
-    <%= link_to 'New Item', new_item_path %>
+    <!-- <%= link_to 'New Item', new_item_path %> -->
     <%= paginate @items %>
   </div>
 </div>

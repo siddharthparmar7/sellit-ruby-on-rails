@@ -65,6 +65,10 @@ a {
 /* --------------------- index page -----------------------------/
 /* item header */
 
+body{
+  background-color: #EAEAEA;
+}
+
 .filter-icon {
   float: right;
   margin-bottom: 20px;
@@ -72,12 +76,13 @@ a {
 }
 
 .filter {
-  /*display: none;*/
+  display: none;
   margin-bottom: 20px;
   /*background: #9C27B0;*/
 }
 
 .item-wrapper {
+  background-color: white;
   border: 5px solid #7B1FA2;
   padding: 10px 10px 10px 10px;
   border-radius: 7px;
@@ -111,7 +116,17 @@ a {
   margin-top: 20px;
 }
 
+.single-item-wrapper{
+  background-color: white;
+}
+
 /************************** Sign In ***********************/
+
+.login-wrapper, .register-wrapper{
+  background-color: white;
+  padding: 50px;
+  border-radius: 7px;
+}
 .facebook-log-in {
   /*margin-left: 25%;
   background-color: #3b5998;
@@ -121,7 +136,7 @@ a {
 }
 
 .facebook-log-in{
-  margin-left: 10%;
+  margin-left: 3%;
 }
 .facebook-log-in a{
   text-align: center;
