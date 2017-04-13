@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
-  skip_before_filter :verify_authenticity_token, if: :json_request?
+  # skip_before_filter :verify_authenticity_token, if: :json_request?
+  # before_filter :verify_jwt_token
   before_action :set_item, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show, :search, :filter]
 

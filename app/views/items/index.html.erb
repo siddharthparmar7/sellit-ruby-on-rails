@@ -21,9 +21,12 @@
   </div>
 </div>
 
-
+<div class="row">
+  <div class="col-md-12">
 <%= link_to 'New Item', new_item_path, class: 'btn btn-primary' %>
-<%= paginate @items %>
+    <%= paginate @items %>
+  </div>
+</div>
 <div class="row">
   <div class="col-md-12">
     <p id="notice"><%= notice %></p>
@@ -110,6 +113,11 @@
     <br>
 
     <!-- <%= link_to 'New Item', new_item_path %> -->
+    
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
     <%= paginate @items %>
   </div>
 </div>

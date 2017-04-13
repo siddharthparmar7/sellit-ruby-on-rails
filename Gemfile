@@ -38,6 +38,13 @@ gem 'jbuilder', '~> 2.5'
 #Gemfile
 gem 'devise'
 gem 'omniauth-facebook', '4.0.0'
+
+# devise JWT for JSON
+# gem 'devise-jwt', '~> 0.1.1'
+gem 'jwt'
+gem 'rack-cors'
+
+# simple and better forms
 gem 'simple_form'
 
 # for image upload

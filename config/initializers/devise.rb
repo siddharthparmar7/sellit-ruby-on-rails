@@ -19,6 +19,11 @@ Devise.setup do |config|
   # config.omniauth :facebook, '208506126300033', '281492b0c0b3f08762022ab5106d1035',scope: 'public_profile,email', info_fields: 'email,name', callback: 'http://localhost:3000/users/auth/facebook/callback'
   config.omniauth :facebook, '208506126300033', '281492b0c0b3f08762022ab5106d1035'
 
+# JWT JSON token secret key settings
+  # config.jwt do |jwt|
+  #   jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
+  # end
+
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
 
