@@ -2,6 +2,8 @@ class ApplicationController < ActionController::Base
   # We depend on our auth_token module here.
   require 'auth_token'
 
+  skip_before_filter :verify_authenticity_token
+
   protect_from_forgery with: :exception
     include Pundit
   def after_sign_in_path_for(resource)

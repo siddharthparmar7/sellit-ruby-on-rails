@@ -1,0 +1,291 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.5ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.183771', '2017-08-07 22:43:39.183771', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.183771', '2017-08-07 22:43:39.183771', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.186569', '2017-08-07 22:43:39.186569', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.186569', '2017-08-07 22:43:39.186569', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.190995', '2017-08-07 22:43:39.190995', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.190995', '2017-08-07 22:43:39.190995', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.192073', '2017-08-07 22:43:39.192073', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.192073', '2017-08-07 22:43:39.192073', 298486374)[0m
+  [1m[35m (2.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.198800', '2017-08-07 22:43:39.198800', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.198800', '2017-08-07 22:43:39.198800', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.200464', '2017-08-07 22:43:39.200464', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.200464', '2017-08-07 22:43:39.200464', 298486374)[0m
+  [1m[35m (3.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.207501', '2017-08-07 22:43:39.207501', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.207501', '2017-08-07 22:43:39.207501', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.209150', '2017-08-07 22:43:39.209150', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.209150', '2017-08-07 22:43:39.209150', 298486374)[0m
+  [1m[35m (1.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.213362', '2017-08-07 22:43:39.213362', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.213362', '2017-08-07 22:43:39.213362', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.215061', '2017-08-07 22:43:39.215061', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.215061', '2017-08-07 22:43:39.215061', 298486374)[0m
+  [1m[35m (2.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.220448', '2017-08-07 22:43:39.220448', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.220448', '2017-08-07 22:43:39.220448', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.221424', '2017-08-07 22:43:39.221424', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.221424', '2017-08-07 22:43:39.221424', 298486374)[0m
+  [1m[35m (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.364733', '2017-08-07 22:43:39.364733', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.364733', '2017-08-07 22:43:39.364733', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.365998', '2017-08-07 22:43:39.365998', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.365998', '2017-08-07 22:43:39.365998', 298486374)[0m
+  [1m[35m (1.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.370622', '2017-08-07 22:43:39.370622', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.370622', '2017-08-07 22:43:39.370622', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.371804', '2017-08-07 22:43:39.371804', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.371804', '2017-08-07 22:43:39.371804', 298486374)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.375172', '2017-08-07 22:43:39.375172', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.375172', '2017-08-07 22:43:39.375172', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.376423', '2017-08-07 22:43:39.376423', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.376423', '2017-08-07 22:43:39.376423', 298486374)[0m
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.379853', '2017-08-07 22:43:39.379853', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.379853', '2017-08-07 22:43:39.379853', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.380869', '2017-08-07 22:43:39.380869', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.380869', '2017-08-07 22:43:39.380869', 298486374)[0m
+  [1m[35m (2.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.386784', '2017-08-07 22:43:39.386784', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.386784', '2017-08-07 22:43:39.386784', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.387946', '2017-08-07 22:43:39.387946', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.387946', '2017-08-07 22:43:39.387946', 298486374)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.390937', '2017-08-07 22:43:39.390937', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:43:39.390937', '2017-08-07 22:43:39.390937', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.391963', '2017-08-07 22:43:39.391963', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:43:39.391963', '2017-08-07 22:43:39.391963', 298486374)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:35.994307', '2017-08-07 22:45:35.994307', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:35.994307', '2017-08-07 22:45:35.994307', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:35.996533', '2017-08-07 22:45:35.996533', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:35.996533', '2017-08-07 22:45:35.996533', 298486374)[0m
+  [1m[35m (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.001725', '2017-08-07 22:45:36.001725', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.001725', '2017-08-07 22:45:36.001725', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.002889', '2017-08-07 22:45:36.002889', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.002889', '2017-08-07 22:45:36.002889', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.006152', '2017-08-07 22:45:36.006152', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.006152', '2017-08-07 22:45:36.006152', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.007467', '2017-08-07 22:45:36.007467', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.007467', '2017-08-07 22:45:36.007467', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.011338', '2017-08-07 22:45:36.011338', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.011338', '2017-08-07 22:45:36.011338', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.012783', '2017-08-07 22:45:36.012783', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.012783', '2017-08-07 22:45:36.012783', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.016907', '2017-08-07 22:45:36.016907', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.016907', '2017-08-07 22:45:36.016907', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.018445', '2017-08-07 22:45:36.018445', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.018445', '2017-08-07 22:45:36.018445', 298486374)[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.023265', '2017-08-07 22:45:36.023265', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.023265', '2017-08-07 22:45:36.023265', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.025110', '2017-08-07 22:45:36.025110', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.025110', '2017-08-07 22:45:36.025110', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.123656', '2017-08-07 22:45:36.123656', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.123656', '2017-08-07 22:45:36.123656', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.124805', '2017-08-07 22:45:36.124805', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.124805', '2017-08-07 22:45:36.124805', 298486374)[0m
+  [1m[35m (1.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.129426', '2017-08-07 22:45:36.129426', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.129426', '2017-08-07 22:45:36.129426', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.130633', '2017-08-07 22:45:36.130633', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.130633', '2017-08-07 22:45:36.130633', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.134583', '2017-08-07 22:45:36.134583', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.134583', '2017-08-07 22:45:36.134583', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.136018', '2017-08-07 22:45:36.136018', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.136018', '2017-08-07 22:45:36.136018', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.139816', '2017-08-07 22:45:36.139816', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.139816', '2017-08-07 22:45:36.139816', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.141214', '2017-08-07 22:45:36.141214', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.141214', '2017-08-07 22:45:36.141214', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.144745', '2017-08-07 22:45:36.144745', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.144745', '2017-08-07 22:45:36.144745', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.146015', '2017-08-07 22:45:36.146015', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.146015', '2017-08-07 22:45:36.146015', 298486374)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.149248', '2017-08-07 22:45:36.149248', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:36.149248', '2017-08-07 22:45:36.149248', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.150350', '2017-08-07 22:45:36.150350', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:36.150350', '2017-08-07 22:45:36.150350', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.532405', '2017-08-07 22:45:49.532405', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.532405', '2017-08-07 22:45:49.532405', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.534839', '2017-08-07 22:45:49.534839', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.534839', '2017-08-07 22:45:49.534839', 298486374)[0m
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.630739', '2017-08-07 22:45:49.630739', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.630739', '2017-08-07 22:45:49.630739', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.632047', '2017-08-07 22:45:49.632047', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.632047', '2017-08-07 22:45:49.632047', 298486374)[0m
+  [1m[35m (1.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.636350', '2017-08-07 22:45:49.636350', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.636350', '2017-08-07 22:45:49.636350', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.637496', '2017-08-07 22:45:49.637496', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.637496', '2017-08-07 22:45:49.637496', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.641301', '2017-08-07 22:45:49.641301', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.641301', '2017-08-07 22:45:49.641301', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.642499', '2017-08-07 22:45:49.642499', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.642499', '2017-08-07 22:45:49.642499', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.646421', '2017-08-07 22:45:49.646421', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.646421', '2017-08-07 22:45:49.646421', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.647672', '2017-08-07 22:45:49.647672', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.647672', '2017-08-07 22:45:49.647672', 298486374)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.651020', '2017-08-07 22:45:49.651020', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.651020', '2017-08-07 22:45:49.651020', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.652250', '2017-08-07 22:45:49.652250', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.652250', '2017-08-07 22:45:49.652250', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.655680', '2017-08-07 22:45:49.655680', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.655680', '2017-08-07 22:45:49.655680', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.656768', '2017-08-07 22:45:49.656768', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.656768', '2017-08-07 22:45:49.656768', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.661322', '2017-08-07 22:45:49.661322', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.661322', '2017-08-07 22:45:49.661322', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.662716', '2017-08-07 22:45:49.662716', 980190962)[0m
+  [1m[36mFixture Insert (0.4ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.662716', '2017-08-07 22:45:49.662716', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.667400', '2017-08-07 22:45:49.667400', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.667400', '2017-08-07 22:45:49.667400', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.668930', '2017-08-07 22:45:49.668930', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.668930', '2017-08-07 22:45:49.668930', 298486374)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.672636', '2017-08-07 22:45:49.672636', 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.672636', '2017-08-07 22:45:49.672636', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.674191', '2017-08-07 22:45:49.674191', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.674191', '2017-08-07 22:45:49.674191', 298486374)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.677442', '2017-08-07 22:45:49.677442', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.677442', '2017-08-07 22:45:49.677442', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.678554', '2017-08-07 22:45:49.678554', 980190962)[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.678554', '2017-08-07 22:45:49.678554', 298486374)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "items"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.681432', '2017-08-07 22:45:49.681432', 980190962)[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "items" ("title", "price", "category", "description", "status", "image", "email", "phone_number", "location", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', NULL, 'MyString', 'MyString', 'f', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2017-08-07 22:45:49.681432', '2017-08-07 22:45:49.681432', 298486374)[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[36mFixture Insert (0.0ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.682427', '2017-08-07 22:45:49.682427', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2017-08-07 22:45:49.682427', '2017-08-07 22:45:49.682427', 298486374)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
